@@ -1,6 +1,6 @@
-                         HowTo Use SIC(k)Click:
+                          HowTo Use SIC(k)Click:
 
-Prepairings
+**Prepairings**
 
 1. go into your steam libery
 2. Right-click on "Warhammer 40,000: Dawn of War II: Retribution" or "Warhammer 40,000: Dawn of War II: The Last Standalone" under the Library in Steam and select Properties.
@@ -11,14 +11,14 @@ Prepairings
 All done!
 
 
-Keys:
+**Keys:**
 
-1. 1-7 = Abillitys
-2. qwert = Control bar
-3. Space = Center cam
-4. Tab = By switching camera between teammates
-5. F = green ping
-6. G = red ping
+* 1-7 = Abillitys
+* qwert = Control bar
+* Space = Center cam
+* Tab = By switching camera between teammates
+* F = green ping
+* G = red ping
 
 
 Rest in Tooltip. ;)
