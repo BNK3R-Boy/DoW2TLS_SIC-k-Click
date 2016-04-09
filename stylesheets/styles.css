@@ -329,6 +329,9 @@ section {
   padding-bottom:50px;
 }
 
+section p img {
+	border: 1px #000000 solid;
+}
 
 /* Footer */
 
