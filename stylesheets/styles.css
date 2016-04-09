@@ -365,7 +365,7 @@ footer {
   }
 
   header a small {
-    font-size:8px;
+    font-size:8px !important;
     display:inline;
   }
 
