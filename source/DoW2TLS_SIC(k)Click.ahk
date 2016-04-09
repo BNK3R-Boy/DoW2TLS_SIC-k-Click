@@ -9,6 +9,7 @@ Prepairings
 4. Enter the launch options "-forceactive -freemouse -window -nomovies" without
    quotation marks and click OK.
 5. Close the game's Properties window and launch DoW2TLS_SIC(k)Click.exe
+6. Put your ingame graphics setting to low. (Reduced also lags in The Last Stand)
 
 All done!
 
