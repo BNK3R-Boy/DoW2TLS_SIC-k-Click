@@ -220,7 +220,7 @@ td {
 
 header {
 	background-image: url("../images/background.jpg");
-	background-repeat:no-repeat
+	background-repeat:no-repeat;
 	background-color: #171717;
 	color: #FDFDFB;
   width:170px;
