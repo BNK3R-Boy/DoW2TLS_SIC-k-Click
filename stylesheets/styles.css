@@ -93,6 +93,10 @@ em {
 	font-style: italic;
 }
 
+strike {
+  display: none;
+}
+
 strong {
   font-weight:700;
 }
