@@ -54,7 +54,8 @@ If !A_IsAdmin AND !Debug
 }
 */
 
-Global inifile="%A_ScriptFullPath%.ini"
+Global inifile:=SubStr(A_ScriptName, 1, -4)".ini"
+Global SteamExe:=0
 Global MapColor1:=0x9AFB8A 
 Global MapColor2:=0xFFEBA1 
 Global ChatColor:=0xE6D084
@@ -95,8 +96,8 @@ HKToolTip=%HKToolTip%  Ctrl+F8: Exit`n
 HKToolTip=%HKToolTip%  Win+p: PickColor`n
 HKToolTip=%HKToolTip%, ,                                       v.1.1dev    , ,
 
+RegRead, SteamExe, HKEY_CURRENT_USER\Software\Valve\Steam, SteamExe
 
-inifile=%A_ScriptFullPath%.ini
 
 ReadIniFile()
 
@@ -279,7 +280,7 @@ StartUp() ;-------------------;Startet bei bedarf Dawn of War II: Retribution mi
   {
     If (!Debug)
     {
-      Run, steam://rungameid/56400
+      Run %SteamExe% -applaunch 56400 -forceactive -freemouse -window -nomovies
       WinWait, %DoWII%
       Loop, 80
       {
@@ -353,8 +354,8 @@ ReadIniFile()
     IniWrite, %MapColor1%, %inifile%, Colors, MapColor1 ;0x9AFB8A
     IniWrite, %MapColor2%, %inifile%, Colors, MapColor2 ;0xFFEBA1
     IniWrite, %ChatColor%, %inifile%, Colors, ChatColor ;0xFBE38F
-    IniWrite, false, %inifile%, Options, QuickAction
-    IniWrite, true, %inifile%, Options, ToolTipToggle
+    IniWrite, 0, %inifile%, Options, QuickAction
+    IniWrite, 1, %inifile%, Options, ToolTipToggle
   }
   IniRead, MapColor1, %inifile%, Colors, MapColor1
   IniRead, MapColor2, %inifile%, Colors, MapColor2
