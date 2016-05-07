@@ -96,6 +96,7 @@ HKToolTip=%HKToolTip%  Ctrl+F8: Exit`n
 HKToolTip=%HKToolTip%  Win+p: PickColor`n
 HKToolTip=%HKToolTip%, ,                                       v.1.1dev    , ,
 
+inifile=%A_MyDocuments%\my games\Dawn of War II - Retribution\Settings\%inifile%
 RegRead, SteamExe, HKEY_CURRENT_USER\Software\Valve\Steam, SteamExe
 
 
